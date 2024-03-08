@@ -6,7 +6,7 @@ var confirmButton = document.getElementById("confirmButton");
 var cancelButton = document.getElementById("cancelButton");
 var iconImg = document.getElementById("iconImg");
 
-function alertMe(titleOrOptions, message) {
+export function coolAlert(titleOrOptions, message) {
   if (typeof titleOrOptions === "string") {
     // If the first argument is a string, assume it's the title
     var options = {
