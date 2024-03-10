@@ -1,4 +1,3 @@
-import alertMe from "../src/woody-alert-me.js";
 
 alertMe({
     title: "Hello",

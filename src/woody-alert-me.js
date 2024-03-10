@@ -100,5 +100,5 @@ function fireAlert(options) {
   });
 }
 
-export default alertMe;
+window.alertMe = alertMe;
 

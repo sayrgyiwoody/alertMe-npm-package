@@ -14,24 +14,18 @@ npm i woody-alert-me
 
 ## Usage
 
-**Setting up Styles**
-First, link the **CSS file** provided with Woody's AlertMe library:
+First, link the **CSS and JavaScript** provided with Woody's AlertMe library:
 ```
-<link rel="stylesheet" href="./node_modules/woody-alert-me/src/woody-alert-me.css">
-```
-
-**Integrating with JavaScript**
-In your **JavaScript file**, **import** the alertMe function from the library:
-```
-import alertMe from './node_modules/woody-alert-me/src/woody-alert-me.js'
+<link rel="stylesheet" href="./path/to/woody-alert-me.css">
+<script src="./path/to/woody-alert-me.js"></script>
 ```
 
-To create a **Basic Alert**, simply use the alertMe function with the desired message:
+**Basic Alert** with the desired message:
 ```
 alertMe('Alert', 'This is a basic alert.');
 ```
 
-You can also create **customized alerts** by passing an options object to the alertMe function:
+**Customized alerts** by passing an options object to the alertMe function:
 ```
 alertMe({
   title: 'Error!',
@@ -45,7 +39,7 @@ alertMe({
 });
 ```
 
-Woody's AlertMe library also supports alerts with **confirm functionality**, allowing users to take actions based on their choices:
+**Confirm Alert**, allowing users to take actions based on their choices:
 ```
 alertMe({
   title: "Hello",
