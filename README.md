@@ -10,13 +10,13 @@ You can install woody-alert-me via **cdn link**:
 for css:
 
 ```
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sayrgyiwoody/alertMe-npm-package@f595394/src/woody-alert-me.css"></link>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sayrgyiwoody/alertMe-npm-package@e37f931/src/woody-alert-me.css"></link>
 ```
 
 for js:
 
 ```
-<script src="https://cdn.jsdelivr.net/gh/sayrgyiwoody/alertMe-npm-package@f595394/src/woody-alert-me.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/sayrgyiwoody/alertMe-npm-package@e37f931/src/woody-alert-me.js"></script>
 ```
 
 Or You can install woody-alert-me via **npm**:
