@@ -43,7 +43,11 @@ function fireAlert(options) {
 
   //options has icon
   if(options.icon){
-    iconImg.style.display = 'block';
+    
+     // Remove all existing icon classes
+     iconImg.classList.remove("success-icon", "error-icon", "info-icon", "loading-icon");
+
+    
 
     if (options.icon === "success") {
       iconImg.classList.add("success-icon");
@@ -54,6 +58,7 @@ function fireAlert(options) {
       }else if (options.icon === "loading") {
         iconImg.classList.add("loading-icon");
       }
+      iconImg.style.display = 'block';
   }
   
 
