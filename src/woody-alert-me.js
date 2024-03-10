@@ -41,14 +41,11 @@ function fireAlert(options) {
   titleSpan.innerText = options.title;
   messageSpan.innerText = options.text;
 
+   // Remove all existing icon classes
+   iconImg.classList.remove("success-icon", "error-icon", "info-icon", "loading-icon");
+
   //options has icon
   if(options.icon){
-    
-     // Remove all existing icon classes
-     iconImg.classList.remove("success-icon", "error-icon", "info-icon", "loading-icon");
-
-    
-
     if (options.icon === "success") {
       iconImg.classList.add("success-icon");
       } else if (options.icon === "error") {

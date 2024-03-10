@@ -17,6 +17,8 @@ npm i woody-alert-me
 First, link the **CSS and JavaScript** provided with Woody's AlertMe library:
 ```
 <link rel="stylesheet" href="./path/to/woody-alert-me.css">
+```
+```
 <script src="./path/to/woody-alert-me.js"></script>
 ```
 
