@@ -1,0 +1,32 @@
+{
+  "name": "woody-alert-me",
+  "version": "2.0.1",
+  "description": "AlertMe: Easily integrate customizable alert boxes into web applications for simplified user interaction with basic alerts and confirmation dialogs.",
+  "main": "woody-alert-me.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sayrgyiwoody/alertMe-npm-package.git"
+  },
+  "keywords": [
+    "alert",
+    "notification",
+    "popup",
+    "modal",
+    "ui",
+    "frontend",
+    "web",
+    "javascript"
+  ],
+  "author": "Wai Yan Tun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sayrgyiwoody/alertMe-npm-package/issues"
+  },
+  "homepage": "https://github.com/sayrgyiwoody/alertMe-npm-package#readme"
+}

@@ -17,13 +17,13 @@ npm i woody-alert-me
 **Setting up Styles**
 First, link the **CSS file** provided with Woody's AlertMe library:
 ```
-<link href="../src/woody-alert-me.css" rel="stylesheet">
+<link rel="stylesheet" href="./node_modules/woody-alert-me/src/woody-alert-me.css">
 ```
 
 **Integrating with JavaScript**
 In your **JavaScript file**, **import** the alertMe function from the library:
 ```
-import { alertMe } from 'woody-alert-me';
+import alertMe from './node_modules/woody-alert-me/src/woody-alert-me.js'
 ```
 
 To create a **Basic Alert**, simply use the alertMe function with the desired message:
