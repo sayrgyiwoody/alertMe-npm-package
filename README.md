@@ -47,18 +47,18 @@ alertMe('Alert', 'This is a basic alert.');
 
 ```
 alertMe({
-  title: 'Error!',
-  text: 'An error occurred.',
-  icon: 'error',
-  showCancelButton: true,
-  confirmButtonColor: '#d33',
-  cancelButtonColor: '#3085d6',
-  confirmButtonText: 'OK',
-  cancelButtonText: 'Cancel'
-});
+    title: 'Info',
+    text: "info alert box , icon : 'info'",
+    icon: 'info',
+    showCancelButton: true,
+    confirmButtonColor : "#222222",
+    cancelButtonColor : "#eeeeee",
+    confirmButtonText : "Confirm Please",
+    cancelButtonText : "nah",
+    });
 ```
 
-**Confirm Alert**, allowing users to take actions based on their choices:
+**Confirm or Cancel Alert**, allowing users to take actions based on their choices:
 
 ```
 alertMe({
