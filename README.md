@@ -1,10 +1,12 @@
 # Woody's alertMe Library
 
-woody-alert-me is a lightweight library for creating customizable alert boxes with animations.
+**woody-alert-me** is a lightweight library for creating customizable **alert boxes** with animations.
+
+![DEMO](./src/demo.png)
 
 ## Installation
 
-You can install woody-alert-me via npm:
+You can install woody-alert-me via **npm**:
 
 ```
 npm i woody-alert-me
@@ -12,15 +14,25 @@ npm i woody-alert-me
 
 ## Usage
 
-This is how you can easily use :
-
+**Setting up Styles**
+First, link the **CSS file** provided with Woody's AlertMe library:
 ```
-import { alertMe } from 'my-alert-box';
+<link href="../src/woody-alert-me.css" rel="stylesheet">
+```
 
-// Basic Alert
+**Integrating with JavaScript**
+In your **JavaScript file**, **import** the alertMe function from the library:
+```
+import { alertMe } from 'woody-alert-me';
+```
+
+To create a **Basic Alert**, simply use the alertMe function with the desired message:
+```
 alertMe('Alert', 'This is a basic alert.');
+```
 
-//Alert with custom options
+You can also create **customized alerts** by passing an options object to the alertMe function:
+```
 alertMe({
   title: 'Error!',
   message: 'An error occurred.',
@@ -31,10 +43,11 @@ alertMe({
   confirmButtonText: 'OK',
   cancelButtonText: 'Cancel'
 });
+```
 
-
-//Alert with confirm function
-fireAlert({
+Woody's AlertMe library also supports alerts with **confirm functionality**, allowing users to take actions based on their choices:
+```
+alertMe({
   title: "Hello",
   text: "Alert showing ",
   icon: "error",
@@ -42,10 +55,10 @@ fireAlert({
   confirmButtonColor: "#222222",
   cancelButtonColor: "",
   confirmButtonText: "Okay",
+  cancelButtonText: "No, Cancel",
   onConfirm: function () {
-    fireAlert({
+    alertMe({
       title: "Deleted!",
-      confirmButtonColor: "#4f46e5",
       text: "Your file has been deleted.",
       icon: "success",
     });
@@ -54,4 +67,5 @@ fireAlert({
 
 ```
 
+**Woody's AlertMe** library simplifies adding alerts to web projects. Whether basic or complex, AlertMe has you covered.
 
