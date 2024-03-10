@@ -41,6 +41,7 @@ function fireAlert(options) {
   titleSpan.innerText = options.title;
   messageSpan.innerText = options.text;
 
+    iconImg.style.display = 'none';
    // Remove all existing icon classes
    iconImg.classList.remove("success-icon", "error-icon", "info-icon", "loading-icon");
 
