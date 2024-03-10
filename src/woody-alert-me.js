@@ -6,8 +6,8 @@ document.querySelector("body").innerHTML += `
         <h2 id="alertTitle" class="alert-title"></h2>
         <p id="alertMessage" class="alert-message"></p>
         <div class="btn-container">
-            <button id="confirmButton" data-modal-hide="default-modal" type="button" class="confirm-btn">OK</button>
-            <button id="cancelButton" data-modal-hide="default-modal" type="button" class="cancel-btn">Cancel</button>
+            <button id="confirmButton" type="button" class="confirm-btn">OK</button>
+            <button id="cancelButton" type="button" class="cancel-btn">Cancel</button>
         </div>
     </div>
 </div>
@@ -72,10 +72,10 @@ function fireAlert(options) {
   confirmButton.innerText = options.confirmButtonText || "OK";
 
   //for confirm button bg color
-  confirmButton.style.backgroundColor = options.confirmButtonColor || "#222222"; // Default color
+  confirmButton.style.backgroundColor = options.confirmButtonColor || "#3b82f6"; // Default color
 
   //for cancel button bg color
-  cancelButton.style.backgroundColor = options.cancelButtonColor || "#d33"; // Default color
+  cancelButton.style.backgroundColor = options.cancelButtonColor || "#ffffff"; // Default color
 
   //show alert bg and alert box
   alertBackground.style.display = "flex";
@@ -92,6 +92,10 @@ function fireAlert(options) {
   });
 
   cancelButton.addEventListener("click", function () {
+    alertBox.classList.remove("animate-bounce-in");
+    void alertBox.offsetWidth; // Trigger reflow to restart the animation
+    alertBox.classList.add("animate-bounce-in");
+
     alertBox.style.display = "none";
     alertBackground.style.display = "none";
     options.onCancel && options.onCancel();
