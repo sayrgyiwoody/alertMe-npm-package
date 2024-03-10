@@ -1,7 +1,7 @@
 {
   "name": "woody-alert-me",
-  "version": "2.1.0",
-  "description": "AlertMe: Easily integrate customizable alert boxes into web applications for simplified user interaction with basic alerts and confirmation dialogs.",
+  "version": "3.0.0",
+  "description": "Alert Box: Easily integrate customizable alert boxes into web applications for simplified user interaction with basic alerts and confirmation dialogs.",
   "main": "woody-alert-me.js",
   "directories": {
     "test": "test"

@@ -1,8 +1,8 @@
-# Woody's alertMe Library
+# Woody's alertMe
 
 **woody-alert-me** is a lightweight library for creating customizable **alert boxes** with animations.
 
-![DEMO](./src/demo.png)
+![DEMO](https://github.com/sayrgyiwoody/npm-alert-me-examples/blob/main/demo.png?raw=true)
 
 ## Installation
 
@@ -37,14 +37,18 @@ First, link the **CSS and JavaScript** provided with Woody's AlertMe library:
 <script src="./path/to/woody-alert-me.js"></script>
 ```
 
-**Basic Alert** with the desired message:
+## Examples
+Example 1: **Basic Alert** with the desired message 
+
+<img src="https://github.com/sayrgyiwoody/npm-alert-me-examples/blob/main/eg1.png?raw=true" width='500px'>
 
 ```
 alertMe('Alert', 'This is a basic alert.');
-```
+``` 
 
-**Customized alerts** by passing an options object to the alertMe function:
 
+Example 2 : **Customized alerts** by passing an options object to the alertMe function:
+<img src="https://github.com/sayrgyiwoody/npm-alert-me-examples/blob/main/eg2.png?raw=true" width='500px'>
 ```
 alertMe({
     title: 'Info',
@@ -58,8 +62,8 @@ alertMe({
     });
 ```
 
-**Confirm or Cancel Alert**, allowing users to take actions based on their choices:
-
+Example 3 : **Confirm or Cancel Alert**, allowing users to take actions based on their choices:
+<img src="https://github.com/sayrgyiwoody/npm-alert-me-examples/blob/main/demo.png?raw=true" width='500px'>
 ```
 alertMe({
             title: "Loading",
@@ -85,5 +89,42 @@ alertMe({
 
 
 ```
+
+Example 4 : **Custom text color and bg color**
+<img src="https://github.com/sayrgyiwoody/npm-alert-me-examples/blob/main/eg4.png?raw=true" width='500px'>
+```
+alertMe({
+    title: "Custom Alert",
+    text: "This is a custom alert box with specified text color and background color.",
+    color: '#ffffff', // Text color
+    bgColor: '#222222', // Background color
+})
+```
+
+Example 5 : Using **Image** inside alert box
+<img src="https://github.com/sayrgyiwoody/npm-alert-me-examples/blob/main/eg5.png?raw=true" width='500px'>
+```
+alertMe({
+    title: "Custom Alert with Image",
+    text: "This is a custom alert box with an image.",
+    imageUrl: "../src/demo.png", // Image URL
+    imageWidth: 300, // Image width in pixels
+    imageHeight: 500, // Image height in pixels
+    imageAlt: "New Image", // Alt text for the image
+})
+```
+
+Example 6 : Using **HTML** content in alert box
+<img src="https://github.com/sayrgyiwoody/npm-alert-me-examples/blob/main/eg6.png?raw=true" width='500px'>
+```
+alertMe({
+    title: "HTML Content",
+    text: "This is a custom alert box with HTML content.",
+    html: `
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    `,
+})
+```
+
 
 **Woody's AlertMe** library simplifies adding alerts to web projects. Whether basic or complex, AlertMe has you covered.
