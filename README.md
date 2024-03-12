@@ -56,7 +56,7 @@ Example 2 : **Customized alerts** by passing an options object to the alertMe fu
 ```
 alertMe({
     title: 'Info',
-    text: "info alert box , icon : 'info'",
+    text: "info alert box",
     icon: 'info',
     showCancelButton: true,
     confirmButtonColor : "#222222",

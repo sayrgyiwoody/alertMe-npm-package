@@ -1,180 +1,234 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 .alert-bg {
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .alert-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .alert-box {
-    display: none;
-    position: relative;
-    padding: 1.5rem;
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    background-color: #fff;
-    border: 1px solid #e5e7eb;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-    border-radius: 0.375rem; /* 6px */
+  display: none;
+  position: relative;
+  padding: 1.5rem;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: #fff;
+  border-width: 1px solid #76808f;
+  /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+  border-radius: 1rem;
 }
 
 /* Media queries for responsiveness */
 @media only screen and (min-width: 768px) {
-    .alert-box {
-        width: 60%;
-    }
+  .alert-box {
+    width: 60%;
+  }
 }
 
 @media only screen and (min-width: 992px) {
-    .alert-box {
-        width: 50%;
-    }
+  .alert-box {
+    width: 50%;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
-    .alert-box {
-        width: 30%;
-    }
+  .alert-box {
+    width: 30%;
+  }
 }
 
 .icon-img {
-    display: block;
-    width: 60%;
-    height: 100px;
-    margin: 0 auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  display: block;
+  width: 60%;
+  height: 100px;
+  margin: 0 auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .success-icon {
-    background-image: url("icons/success.gif");
+  background-image: url("icons/success.gif");
 }
 
 .error-icon {
-    background-image: url("icons/error.gif");
+  background-image: url("icons/error.gif");
 }
 
 .info-icon {
-    background-image: url("icons/info.gif");
+  background-image: url("icons/info.gif");
 }
 
 .loading-icon {
-    background-image: url("icons/loading.gif");
+  background-image: url("icons/loading.gif");
 }
 
 .alert-title {
-    font-weight: bold;
-    margin-bottom: 1rem;
-    font-size: 1.875rem; /* 30px */
-    text-align: center;
-    color: #374151;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 1.875rem; /* 30px */
+  text-align: center;
+  color: #374151;
 }
 
 .alert-message {
-    text-align: center;
-    color: #4b5563;
+  text-align: center;
+  color: #4b5563;
 }
 
 .btn-container {
-    display: flex;
-    justify-content: center;
-    margin-top: .7rem;
-    gap : 10px;
+  display: flex;
+  justify-content: center;
+  margin-top: 0.7rem;
+  gap: 10px;
 }
 
 .confirm-btn,
 .cancel-btn {
-    text-align : center;
-    font-size: 0.875rem;
-    font-weight: 500;
-    padding: 0.725rem 3.25rem; /* 10px 20px */
-    text-align: center;
-    border-radius: 0.375rem; /* 6px */
-    outline: none; 
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.725rem 3.25rem; /* 10px 20px */
+  text-align: center;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
 .confirm-btn {
-    color: white;
-    background-color: #3b82f6;
+  color: white;
+  background-color: #3b82f6;
 }
 
 .confirm-btn:hover {
-    background-color: #2563eb;
+  background-color: #2563eb;
 }
 
 .confirm-btn:focus {
-    outline: none;
-    box-shadow: 0 0 0 0.1875rem #90cdf4;
+  outline: none;
+  box-shadow: 0 0 0 0.1875rem #90cdf4;
 }
 
 .cancel-btn {
-    color: #1f2937;
-    background-color: #ffffff;
-    border: 0.0625rem solid #d1d5db;
+  color: #1f2937;
+  background-color: #ffffff;
+  border: 0.0625rem solid #d1d5db;
 }
 
-.cancel-btn:hover{
-    background-color: #f3f4f6;
+.cancel-btn:hover {
+  background-color: #f3f4f6;
 }
 
 .cancel-btn:focus {
-    outline: none;
-    box-shadow: 0 0 0 0.1875rem rgba(209, 213, 219, 0.5);
+  outline: none;
+  box-shadow: 0 0 0 0.1875rem rgba(209, 213, 219, 0.5);
 }
 
 @keyframes bounceIn {
-    0% {
-      opacity: 0;
-      transform: scale(0.3);
-    }
-    50% {
-      opacity: 1;
-      transform: scale(1.05);
-    }
-    70% {
-      transform: scale(0.9);
-    }
-    100% {
-      transform: scale(1);
-    }
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
   }
-  
-  .animate-bounce-in {
-    animation: bounceIn 0.5s ease;
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
   }
-  
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
-  .hidden {
-    display : none;
-  }
+.animate-bounce-in {
+  animation: bounceIn 0.5s ease;
+}
 
-
-  .img-container {
-    display : flex;
-    justify-content : center;
+@keyframes bounceOut {
+  20% {
+    transform: scale(0.9);
   }
-
-  #alertImg {
-    margin-bottom : 15px;
+  50%,
+  55% {
+    opacity: 0;
+    transform: scale(1.1);
   }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+.animate-bounce-out {
+  animation: bounceOut 0.5s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
+#alertImg {
+  margin-bottom: 15px;
+}
+
+.close-btn {
+  color: #718096; /* text-gray-400 */
+  background-color: transparent; /* bg-transparent */
+  border-radius: 0.375rem; /* rounded-lg */
+  font-size: 0.875rem; /* text-sm */
+  width: 2rem; /* w-8 */
+  height: 2rem; /* h-8 */
+  display: inline-flex;
+  justify-content: center; /* justify-center */
+  align-items: center; /* items-center */
+  cursor: pointer;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+  white-space: nowrap;
+  outline: none;
+  border: none;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.close-btn:hover {
+  background-color: #edf2f7; /* hover:bg-gray-200 */
+  color: #1a202c; /* hover:text-gray-900 */
+}
+
+.close-btn.dark:hover {
+  background-color: #4a5568; /* dark:hover:bg-gray-600 */
+  color: #ffffff; /* dark:hover:text-white */
+}
+
+.close-btn svg {
+  width: 1rem;
+  height: 1rem;
+}
