@@ -1,38 +1,38 @@
 document.querySelector("body").innerHTML += `
-<div id="myAlertBackground" class="hidden alert-bg">
-    <div class="alert-overlay"></div>
-    <div id="myAlertBox" class="hidden alert-box animate-bounce-in">
-    <button id="closeButton" type="button" class="close-btn hidden">
-    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+<div id="am-myAlertBackground" class="am-hidden am-alert-bg">
+    <div class="am-alert-overlay"></div>
+    <div id="am-myAlertBox" class="am-hidden am-alert-box am-animate-bounce-in">
+    <button id="am-closeButton" type="button" class="am-close-btn am-hidden">
+    <svg aria-am-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
     </svg>
     </button>
-        <div id="iconImg" class="hidden icon-img"></div>
-        <h2 id="alertTitle" class="alert-title hidden"></h2>
-        <p id="alertMessage" class="alert-message hidden"></p>
-        <div class="img-container">
-          <img id="alertImg" class="hidden">
+        <div id="am-iconImg" class="am-hidden am-icon-img"></div>
+        <h2 id="am-alertTitle" class="am-alert-title am-hidden"></h2>
+        <p id="am-alertMessage" class="am-alert-message am-hidden"></p>
+        <div class="am-img-container">
+          <img id="am-alertImg" class="am-hidden">
         </div> 
-        <div id="htmlBody"></div>
-        <div class="btn-container">
-            <button id="confirmButton" type="button" class="confirm-btn">OK</button>
-            <button id="cancelButton" type="button" class="cancel-btn">Cancel</button>
+        <div id="am-htmlBody"></div>
+        <div class="am-btn-container">
+            <button id="am-confirmButton" type="button" class="am-confirm-btn">OK</button>
+            <button id="am-cancelButton" type="button" class="am-cancel-btn">Cancel</button>
         </div>
     </div>
 </div>
 
 `;
 
-var alertBox = document.getElementById("myAlertBox");
-var alertBackground = document.getElementById("myAlertBackground");
-var titleSpan = document.getElementById("alertTitle");
-var messageSpan = document.getElementById("alertMessage");
-var confirmButton = document.getElementById("confirmButton");
-var cancelButton = document.getElementById("cancelButton");
-var closeButton = document.getElementById("closeButton");
-var iconImg = document.getElementById("iconImg");
-var html = document.getElementById("htmlBody");
-var alertImg = document.getElementById("alertImg");
+var alertBox = document.getElementById("am-myAlertBox");
+var alertBackground = document.getElementById("am-myAlertBackground");
+var titleSpan = document.getElementById("am-alertTitle");
+var messageSpan = document.getElementById("am-alertMessage");
+var confirmButton = document.getElementById("am-confirmButton");
+var cancelButton = document.getElementById("am-cancelButton");
+var closeButton = document.getElementById("am-closeButton");
+var iconImg = document.getElementById("am-iconImg");
+var html = document.getElementById("am-htmlBody");
+var alertImg = document.getElementById("am-alertImg");
 
 function alertMe(titleOrOptions, message) {
   if (typeof titleOrOptions === "string") {
@@ -69,22 +69,22 @@ function fireAlert(options) {
   iconImg.style.display = "none";
   // Remove all existing icon classes
   iconImg.classList.remove(
-    "success-icon",
-    "error-icon",
-    "info-icon",
-    "loading-icon"
+    "am-success-icon",
+    "am-error-icon",
+    "am-info-icon",
+    "am-loading-icon"
   );
 
   //options has icon
   if (options.icon) {
     if (options.icon === "success") {
-      iconImg.classList.add("success-icon");
+      iconImg.classList.add("am-success-icon");
     } else if (options.icon === "error") {
-      iconImg.classList.add("error-icon");
+      iconImg.classList.add("am-error-icon");
     } else if (options.icon === "info") {
-      iconImg.classList.add("info-icon");
+      iconImg.classList.add("am-info-icon");
     } else if (options.icon === "loading") {
-      iconImg.classList.add("loading-icon");
+      iconImg.classList.add("am-loading-icon");
     }
     iconImg.style.display = "block";
   }

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
-.alert-bg {
+.am-alert-bg {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   display: none;
@@ -13,7 +13,7 @@
   align-items: center;
 }
 
-.alert-overlay {
+.am-alert-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -22,7 +22,7 @@
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.alert-box {
+.am-alert-box {
   display: none;
   position: relative;
   padding: 1.5rem;
@@ -37,24 +37,24 @@
 
 /* Media queries for responsiveness */
 @media only screen and (min-width: 768px) {
-  .alert-box {
+  .am-alert-box {
     width: 60%;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .alert-box {
+  .am-alert-box {
     width: 50%;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .alert-box {
+  .am-alert-box {
     width: 30%;
   }
 }
 
-.icon-img {
+.am-icon-img {
   display: block;
   width: 60%;
   height: 100px;
@@ -64,23 +64,23 @@
   background-position: center;
 }
 
-.success-icon {
+.am-success-icon {
   background-image: url("icons/success.gif");
 }
 
-.error-icon {
+.am-error-icon {
   background-image: url("icons/error.gif");
 }
 
-.info-icon {
+.am-info-icon {
   background-image: url("icons/info.gif");
 }
 
-.loading-icon {
+.am-loading-icon {
   background-image: url("icons/loading.gif");
 }
 
-.alert-title {
+.am-alert-title {
   font-weight: bold;
   margin-bottom: 1rem;
   font-size: 1.875rem; /* 30px */
@@ -88,20 +88,20 @@
   color: #374151;
 }
 
-.alert-message {
+.am-alert-message {
   text-align: center;
   color: #4b5563;
 }
 
-.btn-container {
+.am-btn-container {
   display: flex;
   justify-content: center;
   margin-top: 0.7rem;
   gap: 10px;
 }
 
-.confirm-btn,
-.cancel-btn {
+.am-confirm-btn,
+.am-cancel-btn {
   text-align: center;
   font-size: 0.875rem;
   font-weight: 500;
@@ -114,31 +114,31 @@
   transition: 0.2s;
 }
 
-.confirm-btn {
+.am-confirm-btn {
   color: white;
   background-color: #3b82f6;
 }
 
-.confirm-btn:hover {
+.am-confirm-btn:hover {
   background-color: #2563eb;
 }
 
-.confirm-btn:focus {
+.am-confirm-btn:focus {
   outline: none;
   box-shadow: 0 0 0 0.1875rem #90cdf4;
 }
 
-.cancel-btn {
+.am-cancel-btn {
   color: #1f2937;
   background-color: #ffffff;
   border: 0.0625rem solid #d1d5db;
 }
 
-.cancel-btn:hover {
+.am-cancel-btn:hover {
   background-color: #f3f4f6;
 }
 
-.cancel-btn:focus {
+.am-cancel-btn:focus {
   outline: none;
   box-shadow: 0 0 0 0.1875rem rgba(209, 213, 219, 0.5);
 }
@@ -160,7 +160,7 @@
   }
 }
 
-.animate-bounce-in {
+.am-animate-bounce-in {
   animation: bounceIn 0.5s ease;
 }
 
@@ -179,24 +179,24 @@
   }
 }
 
-.animate-bounce-out {
+.am-animate-bounce-out {
   animation: bounceOut 0.5s ease;
 }
 
-.hidden {
+.am-hidden {
   display: none;
 }
 
-.img-container {
+.am-img-container {
   display: flex;
   justify-content: center;
 }
 
-#alertImg {
+#am-alertImg {
   margin-bottom: 15px;
 }
 
-.close-btn {
+.am-close-btn {
   color: #718096; /* text-gray-400 */
   background-color: transparent; /* bg-transparent */
   border-radius: 0.375rem; /* rounded-lg */
@@ -218,17 +218,17 @@
   right: 15px;
 }
 
-.close-btn:hover {
+.am-close-btn:hover {
   background-color: #edf2f7; /* hover:bg-gray-200 */
   color: #1a202c; /* hover:text-gray-900 */
 }
 
-.close-btn.dark:hover {
+.am-close-btn.dark:hover {
   background-color: #4a5568; /* dark:hover:bg-gray-600 */
   color: #ffffff; /* dark:hover:text-white */
 }
 
-.close-btn svg {
+.am-close-btn svg {
   width: 1rem;
   height: 1rem;
 }
