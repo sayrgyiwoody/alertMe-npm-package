@@ -74,7 +74,8 @@ function fireAlert(options) {
     "am-success-icon",
     "am-error-icon",
     "am-info-icon",
-    "am-loading-icon"
+    "am-loading-icon",
+    "am-question-icon"
   );
 
   //options has icon
