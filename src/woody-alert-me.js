@@ -96,7 +96,7 @@ function fireAlert(options) {
 
   //if showCancelButton true , show cancel button
   if (options.showCancelButton) {
-    cancelButton.style.display = "inline-block";
+    cancelButton.style.display = "block";
     cancelButton.innerHTML = options.cancelButtonText || "Cancel";
   } else {
     cancelButton.style.display = "none";
@@ -106,7 +106,7 @@ function fireAlert(options) {
   if (options.showCloseButton == false) {
     closeButton.style.display = "none";
   } else {
-    closeButton.style.display = "inline-block"; //show by default
+    closeButton.style.display = "flex"; //show by default
   }
 
   //confirmButton inner text
@@ -116,7 +116,7 @@ function fireAlert(options) {
   if (options.showConfirmButton == false) {
     confirmButton.style.display = "none";
   } else {
-    confirmButton.style.display = "inline-block";
+    confirmButton.style.display = "block";
   }
 
   //for confirm button bg color

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 .am-alert-bg {
+  z-index : 99999;
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   display: none;
@@ -210,7 +211,6 @@
   font-size: 0.875rem; /* text-sm */
   width: 2rem; /* w-8 */
   height: 2rem; /* h-8 */
-  display: inline-flex;
   justify-content: center; /* justify-center */
   align-items: center; /* items-center */
   cursor: pointer;
