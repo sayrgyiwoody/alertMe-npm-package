@@ -1,10 +1,9 @@
 showAlert = () => {
     alertMe({
-        title: "Loading",
-        text: "Select accept or cancel. ",
+        title: "Confirmation Alert",
+        text: "This alert can perform confirm processes.",
         icon: "loading",
         showCancelButton: true,
-        confirmButtonText:'Accept',
         onConfirm: function () {
         alertMe({
             title: "Confirmed!",
@@ -21,3 +20,10 @@ showAlert = () => {
         }
     });
 }
+
+alertMe({
+    title: "Custom Alert",
+    text: "This is a custom alert box with specified text color and background color.",
+    color: '#ffffff', // Text color
+    bgColor: '#222222', // Background color
+})

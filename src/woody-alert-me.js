@@ -8,11 +8,13 @@ document.querySelector("body").innerHTML += `
     </svg>
     </button>
         <div id="am-iconImg" class="am-hidden am-icon-img"></div>
+        
         <h2 id="am-alertTitle" class="am-alert-title am-hidden"></h2>
-        <p id="am-alertMessage" class="am-alert-message am-hidden"></p>
         <div class="am-img-container">
           <img id="am-alertImg" class="am-hidden">
-        </div> 
+        </div>
+        <p id="am-alertMessage" class="am-alert-message am-hidden"></p>
+         
         <div id="am-htmlBody"></div>
         <div class="am-btn-container">
             <button id="am-confirmButton" type="button" class="am-confirm-btn">OK</button>
@@ -151,31 +153,35 @@ function fireAlert(options) {
 
   //for confirm button click
   confirmButton.addEventListener("click", function () {
-    alertBox.classList.remove("animate-bounce-in");
+    alertBox.classList.remove("am-animate-bounce-in");
     void alertBox.offsetWidth; // Trigger reflow to restart the animation
-    alertBox.classList.add("animate-bounce-in");
+    alertBox.classList.add("am-animate-bounce-in");
 
     alertBox.style.display = "none";
     alertBackground.style.display = "none";
+    confirmButton.blur();
+
     options.onConfirm && options.onConfirm();
   });
 
   //for cancel button click
   cancelButton.addEventListener("click", function () {
-    alertBox.classList.remove("animate-bounce-in");
+    alertBox.classList.remove("am-animate-bounce-in");
     void alertBox.offsetWidth; // Trigger reflow to restart the animation
-    alertBox.classList.add("animate-bounce-in");
+    alertBox.classList.add("am-animate-bounce-in");
 
     alertBox.style.display = "none";
     alertBackground.style.display = "none";
+    cancelButton.blur();
+
     options.onCancel && options.onCancel();
   });
 
   //for close button click
   closeButton.addEventListener("click", function () {
-    alertBox.classList.remove("animate-bounce-in");
+    alertBox.classList.remove("am-animate-bounce-in");
     void alertBox.offsetWidth; // Trigger reflow to restart the animation
-    alertBox.classList.add("animate-bounce-in");
+    alertBox.classList.add("am-animate-bounce-in");
 
     alertBox.style.display = "none";
     alertBackground.style.display = "none";
@@ -202,7 +208,7 @@ function fireAlert(options) {
     alertImg.style.display = "block";
     alertImg.src = options.imageUrl;
     alertImg.width = options.imageWidth || 300;
-    // alertImg.height = options.imageHeight || 600;
+    alertImg.height = options.imageHeight || auto;
     alertImg.alt = options.imageAlt || "alert-me img";
   } else {
     alertImg.style.display = "none";

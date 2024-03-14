@@ -2,7 +2,9 @@
 
 **woody-alert-me** is a lightweight library for creating customizable **alert boxes** with animations.
 
-![DEMO](https://github.com/sayrgyiwoody/npm-alert-me-examples/blob/main/demo.png?raw=true)
+<p align="center">
+<img src="https://github.com/sayrgyiwoody/npm-alert-me-examples/blob/main/demo.png?raw=true" width='300px'>
+</p>
 
 ## Installation
 
@@ -55,13 +57,14 @@ Example 2 : **Customized alerts** by passing an options object to the alertMe fu
 
 ```
 alertMe({
-    title: 'Info',
-    text: "info alert box",
+    title: 'Customized Alert',
+    text: "This alert box has customized button text and without close button ",
     icon: 'info',
     showCancelButton: true,
+    showCloseButton:false,
     confirmButtonColor : "#222222",
     cancelButtonColor : "#eeeeee",
-    confirmButtonText : "Confirm Please",
+    confirmButtonText : "Click Me",
     cancelButtonText : "nah",
     });
 ```
@@ -69,7 +72,7 @@ alertMe({
 
 Example 3 : **Confirm or Cancel Alert**, allowing users to take actions based on their choices:
 <p align="center">
-<img src="https://github.com/sayrgyiwoody/npm-alert-me-examples/blob/main/demo.png?raw=true" width='500px'>
+<img src="https://github.com/sayrgyiwoody/npm-alert-me-examples/blob/main/eg3.png?raw=true" width='500px'>
 </p>
 
 ```
@@ -123,9 +126,9 @@ Example 5 :Using **Image** inside alert box
 alertMe({
     title: "Custom Alert with Image",
     text: "This is a custom alert box with an image.",
-    imageUrl: "../src/demo.png", // Image URL
-    imageWidth: 300, // Image width in pixels
-    imageHeight: 500, // Image height in pixels
+    imageUrl: "./path/to/image.png", // Image URL
+    //imageWidth: 300, // Adjust image width if necessary
+    //imageHeight: 200, // Adjust image height if necessary
     imageAlt: "New Image", // Alt text for the image
 })
 ```
@@ -139,10 +142,13 @@ Example 6 : Using **HTML** content in alert box
 ```
 alertMe({
     title: "HTML Content",
-    text: "This is a custom alert box with HTML content.",
     html: `
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        <p class="text-center">This is a custom alert box with <b>HTML</b> content. and <b>Icon</b> inside button</p>
+        <input type="email" class="form-control mb-3" id="exampleFormControlInput1" placeholder="name@example.com">
     `,
+    confirmButtonText : `<i class="fa-regular fa-thumbs-up"></i> OK`,
+    cancelButtonText : `<i class="fa-regular fa-thumbs-down"></i> Cancel`,
+    showCancelButton : true,
 })
 ```
 ***
