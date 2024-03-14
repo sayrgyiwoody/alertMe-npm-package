@@ -12,13 +12,13 @@ You can install woody-alert-me via **cdn link**:
 for css:
 
 ```
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sayrgyiwoody/alertMe-npm-package@45513a4/src/woody-alert-me.css"></link>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sayrgyiwoody/alertMe-npm-package@5fdbfc1/src/woody-alert-me.css"></link>
 ```
 
 for js:
 
 ```
-<script src="https://cdn.jsdelivr.net/gh/sayrgyiwoody/alertMe-npm-package@45513a4/src/woody-alert-me.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/sayrgyiwoody/alertMe-npm-package@5fdbfc1/src/woody-alert-me.js"></script>
 ```
 
 Or You can install woody-alert-me via **npm**:
@@ -152,5 +152,24 @@ alertMe({
 })
 ```
 ***
+
+# Available Icons
+
+The following icons are available for use:
+
+- Success
+- Error
+- Info
+- Loading
+- Question
+
+| 
+success | error | info | loading | question |
+|---------|---------|---------|---------|---------|
+| ![Image 1](./src/icons/success.gif) | ![Image 2](./src/icons/error.gif) | ![Image 3](./src/icons/info.gif) | ![Image 4](./src/icons/loading.gif) | ![Image 5](./src/icons/question.gif) |
+
+***
+
+
 
 **Woody's AlertMe** library simplifies adding alerts to web projects. Whether basic or complex, AlertMe has you covered.

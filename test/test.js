@@ -1,7 +1,8 @@
 alertMe({
     title : 'hello',
     text : 'confirm or cancel button',
-    icon : "info",
+    icon : "loading",
+    // bgColor :"#222222",
     showCancelButton : true,
     onConfirm : function () {
         alertMe({
