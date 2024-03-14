@@ -87,6 +87,8 @@ function fireAlert(options) {
       iconImg.classList.add("am-info-icon");
     } else if (options.icon === "loading") {
       iconImg.classList.add("am-loading-icon");
+    } else if (options.icon === "question") {
+      iconImg.classList.add("am-question-icon");
     }
     iconImg.style.display = "block";
   }

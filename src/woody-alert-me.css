@@ -80,6 +80,10 @@
   background-image: url("icons/loading.gif");
 }
 
+.am-question-icon {
+  background-image: url("icons/question.gif");
+}
+
 .am-alert-title {
   font-weight: bold;
   margin-bottom: 0.7rem;
